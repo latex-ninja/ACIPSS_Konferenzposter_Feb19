@@ -1,0 +1,125 @@
+\documentclass[a4paper,10pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[margin=15mm]{geometry}
+
+\usepackage{xcolor}
+\usepackage[english,ngerman]{babel}
+\usepackage[T1]{fontenc}
+\usepackage{fontawesome}
+\usepackage{graphicx}
+\usepackage{pagecolor}
+\usepackage{tikz}
+\usepackage{hyperref}
+\usepackage{tcolorbox}
+
+\definecolor{acipssbeige}{HTML}{835504}
+%\pagecolor{acipssbeige!20}
+
+\usepackage[default,thin]{raleway}
+\setlength\parindent{0pt}
+
+
+\newsavebox{\fmbox}
+
+%https://brunoj.wordpress.com/2009/10/08/latex-the-framed-minipage/
+\newenvironment{fmpage}[1]
+{\begin{lrbox}{\fmbox}\begin{minipage}{#1}}
+{\end{minipage}\end{lrbox}\fbox{\usebox{\fmbox}}}
+
+
+\newcommand{\crosshairs}{{\color{acipssbeige!60}\fontsize{120pt}{40pt}\selectfont\faCrosshairs}}
+\def \factor {2.5}
+
+\title{ACIPSS Konferenzposter Feb19}
+\author{Austrian Centre for Intelligence, Propaganda and Security Studies}
+\date{January 2019}
+
+\begin{document}
+\pagestyle{empty}
+\begin{minipage}[t]{0.68\textwidth}
+{\fontsize{40pt}{40pt}\selectfont\colorbox{acipssbeige!30}{\textbf{ACIPSS}}}\\
+{\fontsize{40pt}{40pt}\selectfont\colorbox{acipssbeige!30}{ARBEITSTAGUNG}}\\
+{\fontsize{40pt}{40pt}\selectfont\colorbox{acipssbeige!30}{\textbf{2019}}}
+\end{minipage}\hfill\hspace{1cm}
+\begin{minipage}[m]{0.29\textwidth}
+\begin{tikzpicture}
+\node[anchor=center] at (0,0) {\crosshairs};
+\draw[ultra thick] (-\factor,0) -- (\factor,0);
+\draw[ultra thick] (0,-\factor) -- (0,\factor);
+\end{tikzpicture}
+\end{minipage}\hfill
+\vspace{1em}
+
+Das Austrian Center for Intelligence, Propaganda and Security Studies (ACIPSS) meldet sich in Wien zurück: Am 8. Februar veranstaltet das Zentrum erstmals in Kooperation mit dem Fachbereich für Risiko- und Sicherheitsmanagement und dem Verband der akademischen Sicherheitsberater Österreichs (VASBÖ) seine 28. Arbeitstagung an der FH Campus Wien.
+\bigskip
+
+\begin{minipage}[t]{0.63\textwidth}
+\small
+Die Teilnehmerinnen und Teilnehmer erwarten Beiträge zu fünf aktuellen Fragestellungen rund um die österreichische und europäische Sicherheit. Dies soll, wie immer, auch Impulse für eine gemeinsame Diskussion geben, die über die Tagung hinausgeht und zu einem praxisnahen, zukunftsorientierten Verständnis von Sicherheit und Gesellschaft führt. 
+\medskip
+
+Im Anschluss an die Tagung bietet sich Interessierten am Nachmittag die Gelegenheit gemeinsam an einem geführten Besuch im erst kürzlich eröffneten „Haus der Geschichte“ am Heldenplatz teilzunehmen. Thomas Goiser wird dabei anhand ausgewählter Exponate deren Bedeutung und Bezug zu politischer Kommunikation erläutern und gemeinsam mit den Teilnehmerinnen und Teilnehmern interpretieren.
+\medskip
+
+Die Teilnahme an der Arbeitstagung ist nach Anmeldung unter \protect\url{anmeldungen@acipss.org} kostenlos. 
+Die Kosten für den eventuellen gemeinsamen Museumsbesuch sind selbst zu tragen. 
+Es wird gebeten den Wunsch, an der Führung durch das „Haus der Geschichte“ teilzunehmen, bereits im Anmeldungsschreiben verbindlich bekannt zu geben.   
+\end{minipage}\hfill\hspace{2em}
+\fbox{\begin{minipage}[t]{0.27\textwidth}
+\small
+%\tcbox[colframe=black!20,colback=black!20, nobeforeafter,left=0mm,right=0mm,top=0mm,bottom=0mm,boxsep=1mm,arc=0mm,boxrule=0.5pt,capture=minipage]{%
+%\MakeUppercase{28.\textbf{ACIPSS}Arbeitstagung}
+
+\MakeUppercase{\textbf{28. ACIPSS Arbeitstagung}}: \\
+\textbf{Freitag, 8. Februar 2019}, \\ von \textbf{09:30} Uhr bis ca. \textbf{13:00} Uhr
+\medskip
+
+\underline{Adresse:} \\
+\textbf{FH Campus Wien} \\
+Favoritenstraße 226 \\
+1100 Wien \\
+Raum A.-1.04. \\
+
+Der Weg zum Raum ist vom Empfang im Erdgeschoss beschriftet. 
+\medskip
+
+{\footnotesize
+Empfehlung für Anreise: U1 Altes Landgut \\
+\textbf{Nachmittagsprogramm} „Haus der Geschichte“: Treffpunkt und -zeit 15:15 Uhr im Eingangsbereich, Haus der Geschichte, Neue Hofburg (Eingang Nationalbibliothek); Dauer bis ca. 17:00 Uhr.
+
+\protect\url{anmeldungen@acipss.org}
+}
+
+%}
+\end{minipage}\hfill}
+
+\vspace{1em}
+
+{\Large\colorbox{acipssbeige!20}{+++ Programm +++}}\\
+
+{\large\emph{Security Update: Europa 2019}}
+
+\textbf{Kurt HAGER} (Bundesministerium für Inneres) -- Sicherheitspolitik in Österreich, Erkenntnisse aus der Ratspräsidentschaft und aktuelle Herausforderungen \\
+\textbf{Verena RINGLER }(European Commons) -- 2019: Die Zukunft der Europäischen Union: Soviel Politik wie möglich, soviel Sicherheit wie nötig? \\
+\textbf{Jeremy STÖHS }(Institut für Sicherheitspolitik Kiel) -- Maritime Sicherheit: Europas blinder Fleck?\\
+
+{\large\emph{Security Update: Organisationen}}
+
+\textbf{Thomas GOISER} (FH Campus Wien) -- Ausbildungs- und Qualitätsstandards von Sicherheitsdienstleistern (Ergebnisse des KIRAS Projekts AQUS) \\
+\textbf{Bernhard SEYRINGER} (Politikanalyst und Herausgeber von XING Magazin) -- Connectivity Confrontations: Belt-and-Road und die nächste Runde der Globalisierung \\
+
+\vspace{3em}
+
+\begin{minipage}[m]{0.28\textwidth}
+\includegraphics[width=0.87\textwidth]{fh-campus.png}
+\end{minipage}\hfill
+\begin{minipage}[m]{0.33\textwidth}
+\includegraphics[width=\textwidth]{acipss-schrift.JPG}
+\end{minipage}\hfill\hspace{1em}
+\begin{minipage}[m]{0.29\textwidth}
+\includegraphics[width=\textwidth]{vasboe-transp.png}
+\end{minipage}\hfill
+
+
+
+\end{document}
